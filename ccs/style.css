@@ -40,7 +40,7 @@ main{
 
     margin: 100px 40px;
     color: white;
-    transition: all 1000ms;
+    transition: all 500ms;
 }
 
 .caja__trasera div p,
@@ -49,10 +49,10 @@ main{
     margin-top: 30px;
 
 }
-.caja__trasera h3{
+.caja__trasera div h3{
 
     font-weight: 400;
-    font size: 26px;
+    font size: 26;
 
 }
 .caja__trasera button{
@@ -81,7 +81,9 @@ width: 100%;
 max-width: 380px;
 position: relative;
 top: -185px;
-left: 10px;    
+left: 10px;  
+transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
 }
 .contenedor__login-register form {
 width: 100%;
