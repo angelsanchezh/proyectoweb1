@@ -49,10 +49,10 @@ main{
     margin-top: 30px;
 
 }
-.caja__trasera div h3{
+.caja__trasera h3{
 
     font-weight: 400;
-    font size: 26;
+    font-size: 26px;
 
 }
 .caja__trasera button{
@@ -81,9 +81,8 @@ width: 100%;
 max-width: 380px;
 position: relative;
 top: -185px;
-left: 10px;  
-transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-
+left: 10px;
+transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);    
 }
 .contenedor__login-register form {
 width: 100%;
@@ -125,37 +124,33 @@ outline: none;
 
 }
 .formulario__login{
-opacity: 1;
-display: block;
+    opacity: 1;
+    display: block;
 
 }
 .formulario__register{
-
     display: none;
+
+
 }
-
 /*trabajando en el responsive*/
-    
-@media screen and (max-width:850px){
 
-main { margin-top: 50px;}
+ @media screen and (max-width: 850px){
 
-
+    main{ margin-top: 50px;
+}
 .caja__trasera{
     max-width: 350px;
     height: 300px;
     flex-direction: column;
     margin: auto;
 }
-
 .caja__trasera div{
+   margin: 0;
+   position: absolute; 
+}
+/*formulario*/
 
-    margin: 0;
-    position: absolute;
-
-    }
-
-    /*trabajando en el formulario*/
 .contenedor__login-register{
 
     top: -10px;
@@ -164,11 +159,11 @@ main { margin-top: 50px;}
 }
 .contenedor__login-register form{
 
-  position: relative;  
+    position: relative;
+    
 }
 
-}   
-
-
-
-
+ }
+    
+ 
+    
