@@ -143,10 +143,10 @@ outline: none;
 }
 
 
-.sesion__invitado button{
+.btn{
     
     padding: 10px 40px;
-    margin-top: 80px;
+    margin-top: 60px;
     border: 0px;
     border-radius: 8px;
     background-color: #46a2fd;
@@ -157,7 +157,7 @@ outline: none;
     outline: none;
         }
 
-.sesion__invitado button:hover{
+.btn:hover{
 
     background: #fff;
     color: #46a2fd;
