@@ -26,22 +26,25 @@ header{
     padding: 0px 20px;
 }
 header .logo{
-
+    
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     
+    
 }
 
-logo .img{
-    width: 150px;
+.logo img{
+    width: 250px;
 }
 .container__nav{
     position: relative;
     height: 100%;
 }
-nav{height: 100%;
+nav{
+    
+    height: 100%;
 
 }
 
@@ -88,10 +91,14 @@ border-radius: 20px;
     display: flex;
     justify-content: space-between;
     position: relative;
+    /*background-image: url(../imagenes/fondoportada.jpeg);*/
+    background-size: cover;
+    background-position: bottom;
+   
 
 }
 
-.cover .container_info{
+.cover .container__info{
 
     max-width: 400px;
     margin-top: 40px;
@@ -109,10 +116,10 @@ border-radius: 20px;
 }
 .cover h2{
 
-font-size: 60px;
-font-weight: 9000;
+font-size: 50px;
+font-weight: 900;
 color: #feba0b;
-margin-top: -30px;
+margin-top: -20px;
 
 }
 .cover p{
@@ -124,16 +131,55 @@ color: #373737;
 .cover input[type="button"]{
 
     padding: 10px 40px;
-    margin-top: 40;
+    margin-top: 40px;
     font-size: 18px;
     font-weight: 600;
     border: none;
     color: white;
     background: #feba0b;
     border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px #20202049;
+    cursor: pointer;
+    transition: box-shadow 500ms;
+    
+}
+.cover input[type="button"]:hover{
 
+    box-shadow: 1px 1px 30px -5px #20202085;
+}
+
+.container__vector{
+
+    position: relative;
+    
+  
+    
+}
+.container__vector img{
+
+position:absolute;
+bottom: 10px;
+right: 0;
+width: 800px;
+animation: move_vector 6s ease-in-out infinite;
 
 }
+
+@keyframes move_vector{
+
+    0%{
+        transform: translateY(20px);
+    }
+    25%{
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+
+
 
 
 
