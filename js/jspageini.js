@@ -10,20 +10,26 @@ if (scroll > 20) {
 }else if(scroll < 20){
     header.classList.remove('nav_mod');
 }
+}
 
-document.getElementById("btn_menu").addEventListener("click", mostrar_menu);
+document.getElementById("btn_menu").addEventListener('click', mostrar_menu);
 
 
 menu = document.getElementById("header");
+body = document.getElementById("container_all")
 nav = document.getElementById("nav");
+
 
 function mostrar_menu(){
 
     menu.classList.toogle('move_content');
-    body.classList.toogle('move_content');
+    body.classList.toogle('move_nav');
+}
+
+ /*  
     nav.classList.toogle('move_nav');
 }
-}
+
 
 /*
     

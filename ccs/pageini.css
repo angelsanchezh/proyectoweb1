@@ -128,6 +128,61 @@ nav ul li a {
 
 }
 
+/* efecto ondulado */
+.bg_color{
+    width: 100%;
+    height: 70%;
+    background: #2196f3;
+    position: absolute;
+    top: 0;
+}
+    .wave{
+width: 6000px;
+height: 100%;
+position: absolute;
+top: 150px;
+left: 0;
+background-image: url(../imagenes/ondulado3.svg);
+background-position:bottom ;
+}
+.w1{
+    animation: w1 7s linear infinite;
+}
+.w2{
+    animation: w2 7s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
+    opacity: 0.5;
+}
+@keyframes w1 {
+    0%{
+        margin-left: 0;
+    }
+100%{   margin-left: -1600px;
+
+}
+
+}
+
+@keyframes w2 {
+    0%{
+        margin-left: 0;
+    }
+100%{   margin-left: -1600px;
+
+}
+
+}
+
+@keyframes desplazamiento {
+
+    0%, 100%{
+        transform: translateY(-25px);
+}
+50%{
+    transform: translateY(10px);
+}
+}
+
+/* fin del efecto ondulado*/
 .container__cover {
     max-width: 1200px;
     margin: auto;
@@ -150,7 +205,7 @@ nav ul li a {
     max-width: 400px;
     font-size: 60px;
     font-weight: 900;
-    color: #373737;
+    color: white;
 
 }
 
@@ -166,7 +221,7 @@ nav ul li a {
 .cover p {
     text-align: justify;
     margin-top: 10px;
-    color: #373737;
+    color: white;
 
 }
 
@@ -248,7 +303,7 @@ nav ul li a {
         background: #f1faff;
         position: fixed;
         top: 0;
-       right: -210px;
+       right: -180px;
         padding: 0 19px;
         transition: all 300ms;
 
