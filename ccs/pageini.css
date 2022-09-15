@@ -333,6 +333,7 @@ background-position:bottom ;
     }
 
 }
+/*inicia footer*/
 footer{
     width: 100%;
     padding: 50px 0px;
@@ -401,3 +402,4 @@ footer{
     height: 1px;
     background-color: #7a7a7a;
 }
+/*fin de footer*/
